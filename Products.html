@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Products - YSMR Store</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+</head>
+<body>
+    
+    <div class="container">
+    <div class="navbar">
+        <div class="logo">
+            <a href="index.html"><img src="Images/logo" width="125px" /></a>
+        </div>
+        <nav>
+            <ul id="MenuItems">
+                   <li> <a href="index.html">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="">Account</a></li>
+            </ul>
+            <img src="Images/Image-2.jpg" width="30px" height="30px" />
+            <img src="Images/MenuIcon.jpg" class="menuIcon" onclick="MenuToggle()" />
+        </nav>
+    </div>
+</div>
+
+<!-- Featured Products -->
+    <div class="small-container">
+        <div class="row row-2">
+        <h2 class="title">Featured Products</h2>
+        <select>
+            <option>Default Shorting</option>
+            <option>Sort by Price</option>
+            <option>Sort by Popularity</option>
+            <option>Sort by Rating</option>
+            <option>Sort by Sale</option>
+
+        </select>
+    </div>
+        <div class="row">
+            <div class="col-4">
+                <img src="Images/Prod-1.jpg"/>
+                <h4>Legacy Bat</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+
+                </div>
+                <p>INR 500.00</p>
+            </div>
+            <div class="col-4">
+                <img src="Images/Prod-2.jpg"/>
+                <h4>Jungel Bat</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o"></i>
+
+                </div>
+                <p>INR 300.00</p>
+            </div>
+            <div class="col-4">
+                <img src="Images/Prod-3.jpg"/>
+                <h4>Village Bat</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+
+                </div>
+                <p>INR 400.00</p>
+            </div>
+            <div class="col-4">
+                <img src="Images/Prod-4.jpg"/>
+                <h4>International Bat</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+
+                </div>
+                <p>INR 1500.00</p>
+            </div>
+        </div>  
+        <div class="row">
+            <div class="col-4">
+                <img src="Images/Prod-5.jpg"/>
+                <h4>Running shoes</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+
+                </div>
+                <p>INR 5000.00</p>
+            </div>
+            <div class="col-4">
+                <img src="Images/Prod-6.jpg"/>
+                <h4>Badminton Rocket</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o"></i>
+
+                </div>
+                <p>INR 3000.00</p>
+            </div>
+            <div class="col-4">
+                <img src="Images/Prod-7.jpg"/>
+                <h4>MRF Bat</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+
+                </div>
+                <p>INR 4000.00</p>
+            </div>
+            <div class="col-4">
+                <img src="Images/Prod-8.jpg"/>
+                <h4>Kookaboora Bat</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+
+                </div>
+                <p>INR 15000.00</p>
+            </div>
+            <div class="col-4">
+                <img src="Images/Prod-9.jpg"/>
+                <h4>Nivia Volley Ball</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o"></i>
+
+                </div>
+                <p>INR 1000.00</p>
+            </div><div class="col-4">
+                <img src="Images/Prod-10.jpg"/>
+                <h4>Cricket Ball</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o"></i>
+
+                </div>
+                <p>INR 700.00</p>
+            </div><div class="col-4">
+                <img src="Images/Prod-11.jpg"/>
+                <h4>Indian Crickt Jersey</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o"></i>
+
+                </div>
+                <p>INR 800.00</p>
+            </div><div class="col-4">
+                <img src="Images/Prod-12.jpg"/>
+                <h4>Laptop</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o"></i>
+
+                </div>
+                <p>INR 80000.00</p>
+            </div>
+
+        </div>
+        <div class="page-btn">
+            <span>1</span>
+            <span>2</span>
+            <span>3</span>
+            <span>4</span>
+            <span>5</span>
+            <span>&#8594;</span>
+
+        </div>      
+    </div>
+    <!-- footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col1">
+                    <h3>Download our App</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, saepe!</p>
+                    <div class="app-logo">
+                        <img src="Images/Play-store.jpeg" />
+                        <img src="Images/App-store.png" />
+
+                    </div>
+                </div>
+                <div class="footer-col2">
+                    <img src="Images/logo"/>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. labore.</p>
+                </div>
+                <div class="footer-col3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <a href=""><li>Blogs</li></a>
+                        <a href=""> <li>Coupouns</li></a>
+                        <a href=""> <li>Return Policy</li></a>
+                        <a href=""><li>Join Affiliate</li></a>
+                    </ul>
+                </div>
+                <div class="footer-col4">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <a href="https://www.facebook.com/login.php/"><li>Facebook</li></a>
+                       <a href="https://twitter.com/i/flow/login"> <li>Twitter</li></a>
+                       <a href="https://www.instagram.com/?hl=en"><li>Instagram</li></a>
+                       <a href="https://www.youtube.com/"><li>Youtube</li></a>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyRight">CopyRight 2020 - YSMR Tech</p>
+        </div>
+    </div>
+    <!-- JS Code for Toggle -->
+    <script>
+    var menuItems = document.getElementById('MenuItems');
+    menuItems.style.maxHeight='0px';
+    function MenuToggle(){
+        if(menuItems.style.maxHeight='0px'){
+            menuItems.style.maxHeight='200px';
+        }
+        else{
+            menuItems.style.maxHeight='0px';
+        }
+    }
+</script>
+</body>
+</html>

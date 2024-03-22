@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacts - YSMR Store</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+</head>
+<body>
+    
+    <div class="container">
+    <div class="navbar">
+        <div class="logo">
+            <a href="index.html"><img src="Images/logo" width="125px" /></a>
+        </div>
+        <nav>
+            <ul id="MenuItems">
+                   <li> <a href="index.html">Home</a></li>
+                <li><a href="Products.html">Products</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="Accoun.html">Account</a></li>
+            </ul>
+            <img src="Images/Image-2.jpg" width="30px" height="30px" />
+            <img src="Images/MenuIcon.jpg" class="menuIcon" onclick="MenuToggle()" />
+        </nav>
+    </div>
+</div>
+<h1>This is Contacts Page</h1>
+
+
+    <!-- footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col1">
+                    <h3>Download our App</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, saepe!</p>
+                    <div class="app-logo">
+                        <img src="Images/Play-store.jpeg" />
+                        <img src="Images/App-store.png" />
+
+                    </div>
+                </div>
+                <div class="footer-col2">
+                    <img src="Images/logo"/>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. labore.</p>
+                </div>
+                <div class="footer-col3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <a href=""><li>Blogs</li></a>
+                        <a href=""> <li>Coupouns</li></a>
+                        <a href=""> <li>Return Policy</li></a>
+                        <a href=""><li>Join Affiliate</li></a>
+                    </ul>
+                </div>
+                <div class="footer-col4">
+                    <h3>Follo Us</h3>
+                    <ul>
+                        <a href="https://www.facebook.com/login.php/"><li>Facebook</li></a>
+                       <a href="https://twitter.com/i/flow/login"> <li>Twitter</li></a>
+                       <a href="https://www.instagram.com/?hl=en"><li>Instagram</li></a>
+                       <a href="https://www.youtube.com/"><li>Youtube</li></a>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyRight">CopyRight 2020 - YSMR Tech</p>
+        </div>
+    </div>
+    <!-- JS Code for Toggle -->
+    <script>
+    var menuItems = document.getElementById('MenuItems');
+    menuItems.style.maxHeight='0px';
+    function MenuToggle(){
+        if(menuItems.style.maxHeight='0px'){
+            menuItems.style.maxHeight='200px';
+        }
+        else{
+            menuItems.style.maxHeight='0px';
+        }
+    }
+</script>
+</body>
+</html>

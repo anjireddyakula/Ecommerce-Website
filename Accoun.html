@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account - YSMR Store</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+</head>
+<body>
+    
+    <div class="container">
+    <div class="navbar">
+        <div class="logo">
+            <a href="index.html"><img src="Images/logo" width="125px" /></a>
+        </div>
+        <nav>
+            <ul id="MenuItems">
+                   <li> <a href="index.html">Home</a></li>
+                <li><a href="Products.html">Products</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+                <li><a href="#">Account</a></li>
+            </ul>
+            <img src="Images/Image-2.jpg" width="30px" height="30px" />
+            <img src="Images/MenuIcon.jpg" class="menuIcon" onclick="MenuToggle()" />
+        </nav>
+    </div>
+</div>
+<div class="account-page">
+    <div class="container">
+        <div class="row">
+            <div class="col-2">
+                <img src="Images/Image-1.jpeg" width="100%" />
+            </div>
+            <div class="col-2">
+                <div class="form-container">
+                    <div class="form-btn">
+                        <span onclick="logIn()">Login</span>
+                        <span onclick="register()">Register</span>
+                        <hr id="Indicator">
+                    </div>
+                    <form id="loginForm">
+                        <input type="text" placeholder="UserName"/>
+                        <input type="password" placeholder="Password"/>
+                        <button type="submit" class="btn">Login</button>
+                        <a href="">Forgot Password</a>
+
+                    </form>
+                    <form id="regForm">
+                        <input type="text" placeholder="UserName" />
+                        <input type="email" placeholder="Email" />
+                        <input type="password" placeholder="Password" />
+                        <button type="submit" class="btn">Register</button>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col1">
+                    <h3>Download our App</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, saepe!</p>
+                    <div class="app-logo">
+                        <img src="Images/Play-store.jpeg" />
+                        <img src="Images/App-store.png" />
+
+                    </div>
+                </div>
+                <div class="footer-col2">
+                    <img src="Images/logo"/>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. labore.</p>
+                </div>
+                <div class="footer-col3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <a href=""><li>Blogs</li></a>
+                        <a href=""> <li>Coupouns</li></a>
+                        <a href=""> <li>Return Policy</li></a>
+                        <a href=""><li>Join Affiliate</li></a>
+                    </ul>
+                </div>
+                <div class="footer-col4">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <a href="https://www.facebook.com/login.php/"><li>Facebook</li></a>
+                       <a href="https://twitter.com/i/flow/login"> <li>Twitter</li></a>
+                       <a href="https://www.instagram.com/?hl=en"><li>Instagram</li></a>
+                       <a href="https://www.youtube.com/"><li>Youtube</li></a>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyRight">CopyRight 2020 - YSMR Tech</p>
+        </div>
+    </div>
+    <!-- JS Code for Toggle -->
+    <script>
+    var menuItems = document.getElementById('MenuItems');
+    menuItems.style.maxHeight='0px';
+    function MenuToggle(){
+        if(menuItems.style.maxHeight='0px'){
+            menuItems.style.maxHeight='200px';
+        }
+        else{
+            menuItems.style.maxHeight='0px';
+        }
+    }
+</script>
+
+<!-- JS for Toggle form -->
+<script>
+var loginForm = document.getElementById("loginForm");
+var regForm = document.getElementById("regForm");
+var indicator = document.getElementById('Indicator');
+function register(){
+    regForm.style.transform = "translateX(0px)";
+    loginForm.style.transform = "translateX(0px)";
+    indicator.style.transform = "translateX(100px)";
+
+}
+function logIn(){
+    regForm.style.transform = "translateX(300px)";
+    loginForm.style.transform = "translateX(300px)";
+    indicator.style.transform = "translateX(0px)";
+
+
+}
+</script> 
+</body>
+</html>
